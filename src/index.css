@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    overflow-x: hidden;
+}
+
+.flex-box{
+    display: flex;
+    align-items: center;
+}
+img{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:768px) {
+   
+ body{
+    overflow-x: hidden;
+}
+}
