@@ -6,13 +6,11 @@ import Sidebar from './Components/Sidebar/Sidebar'
 import Video from './Pages/Video/Video'
 
 const App = () => {
-  const [sidebar,setSidebar] = useState(true);
+  const [sidebar,setSidebar] = useState(false);
   return (
     <div>
       <BrowserRouter>
-      
       <Navbar setSidebar={setSidebar}/>
-      
       <Routes>
 <Route path='/' element={<Home sidebar={sidebar}/>}/>
 <Route path='/video/:categoryId/:videoId' element={<Video/>}/>

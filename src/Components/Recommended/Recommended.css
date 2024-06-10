@@ -14,15 +14,22 @@
     flex-basis: 49%;
 }
 .vid-info h4{
+    text-decoration: none;
+    color: #000;
     font-size: 13px;
     margin-bottom: 5px;
 }
+a{
+    text-decoration: none;
+    color: #000;}
 .vid-info p{
-    line-height: 10px;
+    text-decoration: none;
+    color: #323232;
+    line-height: 20px;
 }
 
 
-@media screen and (max-width:768px) {
+@media (max-width:900px) {
     .recommended{
         flex-basis: 100%;
     }

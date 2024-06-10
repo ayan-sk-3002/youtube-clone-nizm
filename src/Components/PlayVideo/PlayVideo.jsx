@@ -9,11 +9,14 @@ import jack from '../assets/jack.png';
 import user from '../assets/user_profile.jpg';
 import { API_KEY, value_converter } from '../../data';
 import moment from 'moment';
+import { useParams } from 'react-router-dom';
 
-const PlayVideo = ({ videoId }) => {
+const PlayVideo = ({  }) => {
     const [apiData, setApiData] = useState(null);
     const [channelData, setChannelData] = useState(null);
     const [commentsData, setCommentsData] = useState([]);
+
+    const {videoId} = useParams();
 
     const fetchVideoData = async () => {
         const video_data_url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics&id=${videoId}&key=${API_KEY}`;

@@ -1,23 +1,27 @@
-body{
-    margin: 0;
-    padding: 0;
+/* Universal box-sizing for more predictable element sizing */
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    font-family: 'Poppins';
-    overflow-x: hidden;
 }
 
-.flex-box{
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Ensure a fallback font */
+}
+
+.flex-box {
     display: flex;
     align-items: center;
 }
-img{
+
+img {
     cursor: pointer;
 }
 
-
-@media screen and (max-width:768px) {
-   
- body{
-    overflow-x: hidden;
-}
+@media (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+    }
 }
