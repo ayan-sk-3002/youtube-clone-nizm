@@ -1,66 +1,51 @@
-.feed{
+.feed {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-column-gap: 16px;
     grid-row-gap: 30px;
     margin-top: 15px;
 }
-.feed a{
+
+.feed a {
     text-decoration: none;
 }
-.card img{
+
+.card img {
     width: 100%;
     border-radius: 5px;
 }
-.card h2{
+
+.card h2 {
     font-size: 16px;
     font-weight: 600;
     color: #000;
     margin: 5px 0;
 }
-.card h3{
+
+.card h3 {
     font-size: 14px;
     font-weight: 600;
     color: #555;
     margin: 6px 0;
 }
-.card p{
+
+.card p {
     font-size: 14px;
     color: #555;
 }
-@media screen and (max-width:768px) {
-    .feed{
+
+@media (max-width: 900px) {
+    .feed {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
         flex-direction: column;
+        align-items: center;
         margin-top: 15px;
+        gap: 10px;
     }
-    .feed a{
-        text-decoration: none;
-    }
-    .card{
-        margin: 10px 0 ;
+
+    .card {
         width: 100%;
+        margin: 10px 0;
     }
-    .card img{
-        width: 100%;
-        border-radius: 5px;
-    }
-    .card h2{
-        font-size: 16px;
-        font-weight: 600;
-        color: #000;
-        margin: 5px 0;
-    }
-    .card h3{
-        font-size: 14px;
-        font-weight: 600;
-        color: #555;
-        margin: 6px 0;
-    }
-    .card p{
-        font-size: 14px;
-        color: #555;
-    }   
 }

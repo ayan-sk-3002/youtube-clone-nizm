@@ -91,7 +91,7 @@ const PlayVideo = ({  }) => {
             </div>
             <div className="vid-des">
                 <p>{apiData ? apiData.snippet.description.slice(0, 250) : ""}</p>
-                <p>Video des Learn anything</p>
+               
                 <hr />
                 <h4>{apiData ? value_converter(apiData.statistics.commentCount) : "0"} Comments</h4>
                 {commentsData.map((e, i) => (

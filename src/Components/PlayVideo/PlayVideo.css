@@ -191,4 +191,8 @@ img {
     .vid-des {
         padding-left: 10px;
     }
+    
+.comment h3 {
+    font-size: 12px;
+}
 }

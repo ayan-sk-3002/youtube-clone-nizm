@@ -42,6 +42,7 @@ a{
         width: 40%;
         margin-right: 5px;
         flex-basis: 45%;
+        object-fit: cover;
         border-radius: 3px;
     }
     .vid-info{
